@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@_exported import Cupcake
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

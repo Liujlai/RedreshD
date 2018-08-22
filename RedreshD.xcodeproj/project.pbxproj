@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B8B92727F3279595413DF5D /* Pods_RedreshD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832A19BA3FCB9052522BF2A2 /* Pods_RedreshD.framework */; };
 		78A07A4B212BF213002CD5BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A07A4A212BF213002CD5BE /* AppDelegate.swift */; };
 		78A07A4D212BF213002CD5BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A07A4C212BF213002CD5BE /* ViewController.swift */; };
 		78A07A50212BF213002CD5BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A07A4E212BF213002CD5BE /* Main.storyboard */; };
 		78A07A52212BF215002CD5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A07A51212BF215002CD5BE /* Assets.xcassets */; };
 		78A07A55212BF215002CD5BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A07A53212BF215002CD5BE /* LaunchScreen.storyboard */; };
+		78BB4CEC212CED910048B7AA /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB4CEB212CED910048B7AA /* BViewController.swift */; };
+		78FB6389212C06E8004E9A9F /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FB6388212C06E8004E9A9F /* AViewController.swift */; };
+		78FB638B212C0B60004E9A9F /* BezierText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FB638A212C0B60004E9A9F /* BezierText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		537BC281266DFDEE8FC2A18C /* Pods-RedreshD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedreshD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedreshD/Pods-RedreshD.debug.xcconfig"; sourceTree = "<group>"; };
+		68AE594574F90634FCEB6D5E /* Pods-RedreshD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedreshD.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedreshD/Pods-RedreshD.release.xcconfig"; sourceTree = "<group>"; };
 		78A07A47212BF213002CD5BE /* RedreshD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedreshD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A07A4A212BF213002CD5BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A07A4C212BF213002CD5BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		78A07A51212BF215002CD5BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78A07A54212BF215002CD5BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78A07A56212BF215002CD5BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78BB4CEB212CED910048B7AA /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		78FB6388212C06E8004E9A9F /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		78FB638A212C0B60004E9A9F /* BezierText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierText.swift; sourceTree = "<group>"; };
+		832A19BA3FCB9052522BF2A2 /* Pods_RedreshD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedreshD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B8B92727F3279595413DF5D /* Pods_RedreshD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1219A0D3573519A97E6AC546 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				537BC281266DFDEE8FC2A18C /* Pods-RedreshD.debug.xcconfig */,
+				68AE594574F90634FCEB6D5E /* Pods-RedreshD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		59B23CA5E2831FFD3029E32F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				832A19BA3FCB9052522BF2A2 /* Pods_RedreshD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		78A07A3E212BF213002CD5BE = {
 			isa = PBXGroup;
 			children = (
 				78A07A49212BF213002CD5BE /* RedreshD */,
 				78A07A48212BF213002CD5BE /* Products */,
+				1219A0D3573519A97E6AC546 /* Pods */,
+				59B23CA5E2831FFD3029E32F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +86,23 @@
 			children = (
 				78A07A4A212BF213002CD5BE /* AppDelegate.swift */,
 				78A07A4C212BF213002CD5BE /* ViewController.swift */,
+				78FB6388212C06E8004E9A9F /* AViewController.swift */,
+				78BB4CEB212CED910048B7AA /* BViewController.swift */,
+				78FB638C212C13CE004E9A9F /* Bezier */,
 				78A07A4E212BF213002CD5BE /* Main.storyboard */,
 				78A07A51212BF215002CD5BE /* Assets.xcassets */,
 				78A07A53212BF215002CD5BE /* LaunchScreen.storyboard */,
 				78A07A56212BF215002CD5BE /* Info.plist */,
 			);
 			path = RedreshD;
+			sourceTree = "<group>";
+		};
+		78FB638C212C13CE004E9A9F /* Bezier */ = {
+			isa = PBXGroup;
+			children = (
+				78FB638A212C0B60004E9A9F /* BezierText.swift */,
+			);
+			path = Bezier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78A07A59212BF215002CD5BE /* Build configuration list for PBXNativeTarget "RedreshD" */;
 			buildPhases = (
+				B93ADE75F26BD6FBEC90C7F0 /* [CP] Check Pods Manifest.lock */,
 				78A07A43212BF213002CD5BE /* Sources */,
 				78A07A44212BF213002CD5BE /* Frameworks */,
 				78A07A45212BF213002CD5BE /* Resources */,
+				0C0BD46FC79C22541EBE768D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +173,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C0BD46FC79C22541EBE768D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RedreshD/Pods-RedreshD-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BFRefresh/BFRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Cupcake/Cupcake.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BFRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cupcake.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedreshD/Pods-RedreshD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B93ADE75F26BD6FBEC90C7F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RedreshD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78A07A43212BF213002CD5BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				78A07A4D212BF213002CD5BE /* ViewController.swift in Sources */,
+				78FB638B212C0B60004E9A9F /* BezierText.swift in Sources */,
+				78FB6389212C06E8004E9A9F /* AViewController.swift in Sources */,
+				78BB4CEC212CED910048B7AA /* BViewController.swift in Sources */,
 				78A07A4B212BF213002CD5BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +367,7 @@
 		};
 		78A07A5A212BF215002CD5BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537BC281266DFDEE8FC2A18C /* Pods-RedreshD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +385,7 @@
 		};
 		78A07A5B212BF215002CD5BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68AE594574F90634FCEB6D5E /* Pods-RedreshD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
