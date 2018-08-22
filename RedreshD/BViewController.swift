@@ -11,8 +11,8 @@ import UIKit
 class BViewController: UIViewController {
     
     var animator :UIDynamicAnimator!
-    lazy var v: UIView = {
-        return View.bg("#996699").pin(80,80).pin(.xy(80,80))
+    lazy var v: UIImageView = {
+        return ImageView.img("noNet").pin(80,80).pin(.xy(80,80))
     }()
     lazy var vv: UIView = {
         return View.bg("#cc3366").pin(80,80).pin(.xy(240,240))
@@ -41,10 +41,12 @@ class BViewController: UIViewController {
         
     }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for touche in touches {
-            let touch = touche.location(in: self.view)
-            addCaptureInView(vv, withPoint: touch)
-        }
+        animator.removeAllBehaviors()
+//        let  touch = (touches as NSSet).anyObject() as AnyObject
+//        let point = touch.location(in: self.view)
+//        let point = touch.previousLocation(in:self.view)
+        let  point = touches.first!.location(in: self.view)
+        addCaptureInView(vv, withPoint: point)
     }
     
     /// 重力行为
@@ -54,7 +56,7 @@ class BViewController: UIViewController {
         //        创建重力行为
         let gravity  = UIGravityBehavior()
         gravity.addItem(a);
-        //        设置重力角度（默认角度.pi / 2）
+        //        设置重力角度（默认角度.pi / 2）（是一个角度，以x轴正方向为0°，顺时针正数，逆时针负数）
         gravity.angle = 0
         //        设置重力大小 --->重力的加速度
         gravity.magnitude = 10.0
@@ -94,7 +96,7 @@ class BViewController: UIViewController {
     func addCaptureInView(_ a:UIView ,withPoint point:CGPoint){
         //        创建捕捉行为
         let snap = UISnapBehavior(item: a, snapTo: point)
-        //阻力系数（0~1）
+        //阻力系数（防震系数）（0~1 数值越大，震动的幅度越小）
         snap.damping = 1
         animator.addBehavior(snap)
     }
